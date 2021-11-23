@@ -3,7 +3,7 @@ Uygulamalar arası BroadcastReceiver kullanımı
 
 AndroidBroadcastReceiverExample, bir uygulamanın diğer bir uygulama tarafından broadcastreceiver kullanılarak nasıl kontrol edilebileceğine dair bir uygulamadır.
 
-BroadcastReceiverPermissionApp02 uygulamasında ActivityRunningControl adlı bir servis çalışmaktadır.Bu servis her 5000ms de bir arka planda mı yoksa ön planda mı çalıştığını kontrol eder ve "my.signal" yayını ve "my.permission" izni ile diğer uygulamalara yayın yapar.
+BroadcastReceiverPermissionApp02 uygulamasında ActivityRunningControl adlı bir servis çalışmaktadır.Bu servis her 5000ms de bir uygulama arka planda mı yoksa ön planda mı çalıştığını kontrol eder ve "my.signal" yayını ve "my.permission" izni ile diğer uygulamalara yayın yapar.
 
 BroadcastReceiverPermissionApp01 uygulaması ise "my.signal" yanını BroadcastingClass sınıfının onReceiver methodu ile yakalayıp gelen yayındaki verileri işlemektedir.
 
