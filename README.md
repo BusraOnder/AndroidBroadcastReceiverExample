@@ -1,0 +1,2 @@
+# AndroidBroadcastReceiverExample
+Uygulamalar arası BroadcastReceiver kullanımı
