@@ -9,7 +9,7 @@ BroadcastReceiverPermissionApp01 uygulaması ise "my.signal" yanını Broadcasti
 
 Bu iki uygulamanın amacı BroadcastReceiverPermissionApp02 uygulaması arka plana düşerse BroadcastReceiverPermissionApp01 uygulaması tarafından tekrar ön plana alınmaktadır.
 
-#Önemli Alanlar#
+# Önemli Alanlar #
 
 "com.example.broadcastreceiverpermissionapp02" açmak istediğimiz uygulamanın package namedir.
 
