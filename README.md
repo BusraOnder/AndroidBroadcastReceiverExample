@@ -24,7 +24,7 @@ BroadcastReceiverPermissionApp01 yayını dinleyebilmek için BroadcastReceiverP
    
 Servis tanımlamaları ve servisi aktif etme durumlarına dikkat edilmelidir.
 
-   Manifest --> <service android:name=".ActivityRunningControl"/>
+   <service android:name=".ActivityRunningControl"/>
   
 Receiver tanımlamalarına dikkat edilmelidir.(
 
