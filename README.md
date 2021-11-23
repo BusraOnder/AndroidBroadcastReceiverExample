@@ -11,7 +11,7 @@ Bu iki uygulamanın amacı BroadcastReceiverPermissionApp02 uygulaması arka pla
 
 # Önemli Alanlar #
 
-"com.example.broadcastreceiverpermissionapp02" açmak istediğimiz uygulamanın package namedir.
+	"com.example.broadcastreceiverpermissionapp02" açmak istediğimiz uygulamanın package namedir.
 
 BroadcastReceiverPermissionApp02  yayıncı uygulama olduğundan yayını için bir izin oluşturmalıdır.Bununda Manifest dosyası altında tanımlaması yapılmaktadır.
 
