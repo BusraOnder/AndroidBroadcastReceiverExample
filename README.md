@@ -19,27 +19,27 @@ BroadcastReceiverPermissionApp02  yayıncı uygulama olduğundan yayını için 
    
 BroadcastReceiverPermissionApp01 yayını dinleyebilmek için BroadcastReceiverPermissionApp02'in oluşturduğu izini tanımlamalıdır.
 
-   <uses-permission android:name="my.permission" />
+	<uses-permission android:name="my.permission" />
     
    
 Servis tanımlamaları ve servisi aktif etme durumlarına dikkat edilmelidir.
 
-   <service android:name=".ActivityRunningControl"/>
+	<service android:name=".ActivityRunningControl"/>
   
-Receiver tanımlamalarına dikkat edilmelidir.(
+Receiver tanımlamalarına dikkat edilmelidir.
 
-   <receiver android:name=".BroadcastingClass" android:exported="true">
+	<receiver android:name=".BroadcastingClass" android:exported="true">
 			<intent-filter>
 				<action android:name="my.signal"></action>
 			</intent-filter>
-		</receiver>
+	</receiver>
    
    
 Bir uygulamayı diğer uygulamadan erişmek için tanımlamaya dikkat edilmelidir.
 
-   <queries>
-		 <package android:name="com.example.broadcastreceiverpermissionapp02" />
-	 </queries>
+	<queries>
+		<package android:name="com.example.broadcastreceiverpermissionapp02" />
+	</queries>
    
    
    
