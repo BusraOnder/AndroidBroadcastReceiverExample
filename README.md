@@ -15,7 +15,7 @@ Bu iki uygulamanın amacı BroadcastReceiverPermissionApp02 uygulaması arka pla
 
 BroadcastReceiverPermissionApp02  yayıncı uygulama olduğundan yayını için bir izin oluşturmalıdır.Bununda Manifest dosyası altında tanımlaması yapılmaktadır.
 
-   <permission android:name="my.permission" android:protectionLevel="signature"></permission>
+	<permission android:name="my.permission" android:protectionLevel="signature"></permission>
    
 BroadcastReceiverPermissionApp01 yayını dinleyebilmek için BroadcastReceiverPermissionApp02'in oluşturduğu izini tanımlamalıdır.
 
