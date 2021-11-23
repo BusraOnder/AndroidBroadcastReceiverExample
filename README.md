@@ -9,24 +9,24 @@ BroadcastReceiverPermissionApp01 uygulaması ise "my.signal" yanını Broadcasti
 
 Bu iki uygulamanın amacı BroadcastReceiverPermissionApp02 uygulaması arka plana düşerse BroadcastReceiverPermissionApp01 uygulaması tarafından tekrar ön plana alınmaktadır.
 
-----Önemli Alanlar----
+#Önemli Alanlar#
 
-# "com.example.broadcastreceiverpermissionapp02" açmak istediğimiz uygulamanın package namedir.
+"com.example.broadcastreceiverpermissionapp02" açmak istediğimiz uygulamanın package namedir.
 
-# BroadcastReceiverPermissionApp02  yayıncı uygulama olduğundan yayını için bir izin oluşturmalıdır.Bununda Manifest dosyası altında tanımlaması yapılmaktadır.
+BroadcastReceiverPermissionApp02  yayıncı uygulama olduğundan yayını için bir izin oluşturmalıdır.Bununda Manifest dosyası altında tanımlaması yapılmaktadır.
 
    <permission android:name="my.permission" android:protectionLevel="signature"></permission>
    
-# BroadcastReceiverPermissionApp01 yayını dinleyebilmek için BroadcastReceiverPermissionApp02'in oluşturduğu izini tanımlamalıdır.
+BroadcastReceiverPermissionApp01 yayını dinleyebilmek için BroadcastReceiverPermissionApp02'in oluşturduğu izini tanımlamalıdır.
 
    <uses-permission android:name="my.permission" />
     
    
-#  Servis tanımlamaları ve servisi aktif etme durumlarına dikkat edilmelidir.
+Servis tanımlamaları ve servisi aktif etme durumlarına dikkat edilmelidir.
 
    Manifest --> <service android:name=".ActivityRunningControl"/>
   
-# Receiver tanımlamalarına dikkat edilmelidir.(
+Receiver tanımlamalarına dikkat edilmelidir.(
 
    <receiver android:name=".BroadcastingClass" android:exported="true">
 			<intent-filter>
@@ -35,7 +35,7 @@ Bu iki uygulamanın amacı BroadcastReceiverPermissionApp02 uygulaması arka pla
 		</receiver>
    
    
-# Bir uygulamayı diğer uygulamadan erişmek için tanımlamaya dikkat edilmelidir.
+Bir uygulamayı diğer uygulamadan erişmek için tanımlamaya dikkat edilmelidir.
 
    <queries>
 		 <package android:name="com.example.broadcastreceiverpermissionapp02" />
